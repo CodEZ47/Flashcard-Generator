@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: antiquewhite;
+}
+.main-container{
+    /* border: red solid 3px; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "cont cont cont cont"
+        "res res res res"
+        "setting setting . timer";
+}
+.flashcard-container{
+    width: 100%;
+    min-height: 400px;
+    grid-area: cont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: red 2px solid; */
+}
+.flashcard-front{
+    width: 300px;
+    min-height: 200px;
+    border: solid white 2px;
+}
+.response{
+    width: 100%;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area:res
+}
+.settings{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: setting;
+    /* border: solid green 2px; */
+}
+.timer-view{
+    height: 50px;
+    grid-area: timer;
+    /* border: yellow 2px solid; */
+}
